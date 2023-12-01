@@ -1,0 +1,559 @@
+body{
+	background-color: #468BA9;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.subnav-content {
+    background-color:  white;
+    width: 100%;
+    z-index: 1;
+    padding: 20px 0 ;
+    display: none;
+	margin-left: 0;
+	background-color: rgb(0,0,0,0.5);
+  }
+.subnav-content a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+    margin:0;
+    text-align: center;
+} 
+.subnav:hover .subnav-content {
+    display: flex;
+	flex-direction: column; 
+	margin: 0;
+	padding: 1em;
+}
+
+
+
+
+ #inline{
+	text-align: center;
+	font-size:large;
+	font-weight: bold;
+	padding-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+ }
+
+
+.footer{
+	color: #fff;
+	font-weight: bold;
+	align-self: flex-end;
+	float: right;	
+
+}																		
+
+
+/* Home */
+#me{
+	display: flex;
+	width:19em;
+	height: 19em;;
+	margin: auto auto;
+	border-radius: 8em;
+}
+.home{
+	margin: auto;
+	margin-top:3em;
+	margin-bottom: 3em;
+	margin-left: 1em;
+	margin-right: 1em;
+	border-radius:0.5em;
+	background-color: rgb(0,0,0,0.7);
+	color:#fafafa;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 1.7em;
+}
+.metime{
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-self: center;
+}
+.hcontainer{
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+}
+.hcontainer hgroup{
+	text-align: center;	
+}
+.hcontainer h2{
+	color:rgb(100, 194, 237);
+	text-align: center;
+}
+.hcontainer p{
+	font-size: 1.1em;
+	text-align: center;
+}
+.contact{
+	align-self: center;
+	margin-top: 20px;
+}
+.contactbtn{
+	width: 5em;
+	height:1.8em;
+	color: rgb(63, 173, 223);
+	font-size:x-large;
+	border-radius: 1em;
+	border-color: white;
+}
+.contactbtn:hover{
+	background-color: #88a6b3;
+	color: #fff;
+
+}
+
+
+
+/* About */
+.main{
+	color:#fafafa;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: auto;
+	margin-top:3em;
+	margin-bottom: 1em;
+}
+.about{
+	background-color: rgb(0,0,0,0.7);
+	display: flex;
+	flex-direction: column ;
+	justify-content: space-between;
+	margin: auto;
+	margin-bottom: 1em;
+	margin-left: 1em;
+	margin-right: 1em;
+	border-radius: 0.5em;
+	
+	
+}
+.aboutmad{
+	width:fit-content;
+	margin: 5px;
+	padding-bottom: 5px;
+}
+.about h3{
+	text-align: center;
+	color: rgb(100, 194, 237);
+}
+.about p{
+	 padding: 5px;
+	 text-align: center;
+
+}
+.about blockquote{
+	font-style: italic;
+}
+
+.vid{
+	margin:auto;
+	width: 18em;
+	height: 15em;
+}
+#bitsvid[poster]{
+	width:18em;
+	height:100%;
+}
+
+/* Hobby   */
+.hobby{
+	background-color: rgb(0,0,0,0.7);
+	display: flex;
+	flex-direction: column; 
+	margin: auto;
+	margin-bottom: 1em;
+	margin-left: 1em;
+	margin-right: 1em;
+	padding: 1em;
+	border-radius: 0.5em;
+}
+.hobby h3{
+	color: rgb(100, 194, 237);
+	text-align: center;
+}
+.hobbies{
+	color: rgb(100, 194, 237);
+	margin: 0;
+}
+
+.aside{
+	display: flex;
+	flex-direction: column;
+}
+
+.hobbyimg{
+	align-self: flex-end;
+	width: 100px;
+	height: 100px;
+	margin: 10px; 
+}
+
+
+
+
+/* Resume */
+.container{
+	background-color: rgb(0,0,0,0.7);
+	color:#fafafa;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: auto;
+	margin-top:3em;
+	margin-bottom: 1em;
+	margin-left: 5%;
+	margin-right: 5%;
+	border-radius: 0.5em;
+}
+.experience{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column ;
+	margin: 10px;
+
+}
+
+.experience p{
+	text-align: left;
+	padding-left: 5px;
+}
+.experience hgroup{
+	text-align: left;
+	padding-left: 5px;
+}
+#experience{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column ;
+	border: 1px solid #fff;
+	margin: 10px;
+}
+.experience h2{
+	border:solid #fff;
+	color: rgb(100, 194, 237);
+	border-bottom: 1px ;
+	border-radius: 10px;
+	margin: 10px;
+	text-align: center; 
+	width:170px;
+	
+}
+.experience h4{
+	font-weight:lighter;
+	color: rgb(100, 194, 237);
+	
+}
+.education{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column ;
+	margin: 10px;
+
+}
+
+#education{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column ;
+	border: 1px solid #fff;
+	margin: 10px;
+
+}
+.education p{
+	text-align: left;
+	padding-left: 5px;
+}
+.education hgroup{
+	text-align: left;
+	padding-left: 5px;
+}
+.education h2{
+	border:solid #fff;
+	color: rgb(100, 194, 237);
+	border-bottom: 1px ;
+	border-radius: 10px;
+	margin: 10px;
+	text-align: center; 
+	width:170px;
+	
+}
+.education h4{
+	font-weight:lighter;
+	color: rgb(100, 194, 237);
+	
+}
+
+
+/* Skills */
+#skillsh{
+	font-size:1.4em;
+	font-family: 'Times New Roman', Times, serif;
+	color: #000;
+	font-weight: bolder;
+	text-align: center;
+}
+.skills{
+	display: flex;
+	flex-direction: column;
+	color:#fff;
+	align-items: center;
+}
+
+.progs{
+	background-color: rgb(0,0,0,0.7);
+	margin: 1em;
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+	border: 1px solid rgb(100, 194, 237);
+	align-items: center;
+	width:15em;
+	height: 13em;
+	border-radius: 0.8em;
+}
+.skills .progs:hover{
+	transform: scale(1.05);
+	box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.progs h4{
+	font-size:x-large;
+}
+.progs p{
+	font-size: large;
+}
+.webs{
+	width:4em;
+	height:4em;
+	
+}
+
+
+/* Testimonial */
+
+
+.testimonial-col{
+    border-radius: 1em;
+	background: rgb(0,0,0,0.7);
+    padding-right: 1em;
+	padding-left: 1em;
+	padding-top: 1.5em;
+	padding-bottom: 1em;
+    display: flex;
+	flex-direction: column;
+	margin: auto;
+	margin-top: 3em;
+	margin-bottom: 9em;
+	margin-left: 1em;
+	margin-right: 1em; 
+	color: #fff;
+	align-items: center;
+}
+
+.testimonial-col img{
+    height: 20em;
+	width: 18em;
+    margin: auto;
+	align-items: center;
+    border-radius: 5em;
+}
+.testimonial-col hgroup{
+	display: flex;
+	flex-direction: column;
+    padding: 0;
+	color: #468BA9;
+}
+.testimonial-col h4{
+    text-align: left;
+	color: #468BA9;
+}
+.testimony h3{
+    text-align: center;
+	color: black;
+	font-size: x-large;
+}
+
+
+
+
+
+/* Contact */
+
+/* the whole contact page */
+.form{
+    padding-right: 1em;
+	padding-left: 1em;
+	padding-bottom: 2em;
+    display: flex;
+	flex-direction: column;
+	margin: auto;
+	margin-top: 3em;
+	align-items: center;
+
+	
+}
+.form h3{
+	text-align: left;
+	color: black;
+	font-size: x-large;
+}
+
+.contact-form h3{
+	text-align: left;
+	color: #62b7db;
+	font-size: x-large;
+}
+
+/* First box as a whole */
+.contact-info{
+	border-top-right-radius: 2em;
+	border-top-left-radius: 2em;
+	background: rgb(255,255,255,0.7);
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 2rem;
+    color: #3489ad;
+    
+}
+.firstbox{
+	background: rgb(255,255,255,0.7);
+	border-top-right-radius: 2em;
+	border-top-left-radius: 2em;
+}
+.information{
+	display: flex;
+	color: #555;
+	margin: 0.7rem 0;
+	align-items: center;
+	font-size: 0.95rem;
+}
+
+.icons{
+	margin-right: 0.7rem;
+}
+
+
+
+/* Social media icons */
+.social-media{
+	padding: 2rem 0 0 2em;
+	margin-bottom:10px;
+    
+}
+.social-media p{
+	color: black;
+	font-size: 20px;
+	font-weight:lighter;
+}
+.social-icons{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.5rem;
+	margin-left: 1em;
+	margin-right: 1em ;
+}
+.social-icons a{
+	width: 35px;
+	height: 35px;
+	border-radius: 5px;
+	background: linear-gradient(45deg, rgb(139, 178, 251),  #3489ad);
+	color: #fff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 0.5rem;
+}
+.social-icons a:hover{
+	transform: scale(1.05);
+}
+
+
+
+/* Second box */
+.contact-form{
+	background-color: rgb(0,0,0,0.7);
+	display: flex;
+	flex-direction: column;
+	padding: 2em 2em;
+    color: #3489ad;
+	border-bottom-left-radius: 2em;
+	border-bottom-right-radius: 2em;
+
+}
+.contact-form h3{
+	font-size: x-large;
+}
+form{
+	display: flex;
+	flex-direction: column; 
+	padding-left: 0.5em;
+}
+
+
+#insideinput{
+	margin: 0.5em;
+	background-color: white;
+	width: 15em;
+	height: 2.5em;
+	border: 0;
+	border-radius: 0.8em;
+	padding-left: 1em;
+
+}
+#textarea{
+	border-radius: 0.8em;
+	margin: 0.5em;
+	width: 15em;
+	height: 3em;
+	padding-left: 1em;
+	padding-top: 0.5em;
+}
+
+
+label{
+	color: white;
+	font-size: 1.1rem;
+	font-weight: 400;
+	margin: 0.5em;	
+}
+#checkbox{
+	margin-left: 3em;
+}
+
+
+#radio{
+	margin-left: 2em;
+
+}
+/* send button */
+.button{
+	align-self: center;
+}
+.btn{
+	padding: 0.6rem 1.3rem;
+	background-color: #fff;
+	border: 2px solid #fafafa;
+	font-size: 0.95rem;
+	color: #3489ad;
+	line-height: 1;
+	border-radius: 1.5em;
+    transition: 0.3s;
+    margin-top: 1.5em;
+	
+}
+.btn:hover{
+	background-color: #88a6b3;
+	color: #fff;
+
+}
+
