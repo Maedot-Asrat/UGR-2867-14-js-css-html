@@ -7,63 +7,71 @@
         <link rel= "stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
-          <nav>
+      <header>
+        <nav>
             <div class="subnav">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em" ><g  stroke-width="0" ></g> <g stroke-linecap="round" stroke-linejoin="round"></g> <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg> 
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="3vh" width="7vw" class="subnav-bar"><g  stroke-width="0" ></g> <g stroke-linecap="round" stroke-linejoin="round"></g> <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg> 
                 <div class="subnav-content">
-                    <a href="home.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="resume.html">Resume</a>
-                    <a href="skills.html">Skills</a>
-                    <a href="testimonials.html">Testimonials</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="home.html" class="subnav-content--link">Home</a>
+                    <a href="about.html" class="subnav-content--link">About</a>
+                    <a href="resume.html" class="subnav-content--link">Resume</a>
+                    <a href="skills.html" class="subnav-content--link">Skills</a>
+                    <a href="testimonials.html" class="subnav-content--link">Testimonials</a>
+                    <a href="contact.html" class="subnav-content--link">Contact</a>
                 </div>
             </div>
-            <span id="inline">Skills</span>
+            <div class="navlist"> 
+                <a href="home.html" class="navlist--link">Home</a> 
+                <a href="about.html" class="navlist--link">About</a> 
+                <a href="resume.html" class="navlist--link">Resume</a>
+                <a href="skills.html" class="navlist--link">Skills</a>
+                <a href="testimonials.html" class="navlist--link">Testimonials</a>
+                <a href="contact.html" class="navlist--link">Contact</a>
+            </div> 
+            <span class="inline">Skills</span> 
             <a href="mailto:asratmaedot@gmail.com">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><g  stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g > <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" fill="#080341"></path> </g></svg></a>
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="3vh" width="7vw" class="mail"><g  stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g > <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" fill="#080341"></path> </g></svg></a>
             
-        </header>
-        <h3 id="skillsh">Skills in Development and Designing</h3>
-        <div class="skills">
-            
-          <section>
-            <div class="progs">
-            <img src="images/html.png" alt="html" class="webs">
-            <h4>HTML</h4>
-            <p>Intermediate</p>
-          </div>
-          </section>
-          <section >
-            <div class="progs">
-            <img src="images/css.png" alt="css" class="webs">
-            <h4>CSS</h4>
-            <p>Intermediate</p>
-          </div>
-          </section>
-         
-          
-          <section>
-            <div class="progs">
-            <img src="images/python.png" alt="python" class="webs">
-            <h4>Python</h4>
-            <p>Beginner</p>
-          </div>
-          </section>
-        
-        
-          <section>
-            <div class="progs">
-            <img src="images/figma.png" alt="figma" class="webs">
-            <h4>Figma</h4>
-            <p>Advanced</p>
-          </div>
-          </section>
-          
-          </div>
-
-        
+        </nav>
+    </header>
+          <h3 class="skills__title">Skills in Development and Designing</h3>
+          <div class="skills">
+            <section class="skills__section">
+                <div class="progs">
+                    <div class="progs__web">
+                        <img src="images/html.png" alt="html" class="progs__web--element">
+                    </div>
+                    <h4 class="progs__title">HTML</h4>
+                    <p class="progs__level">Intermediate</p>
+                </div>
+            </section>
+            <section class="skills__section">
+                <div class="progs">
+                    <div class="progs__web">
+                        <img src="images/css.png" alt="css" class="progs__web--element">
+                    </div>
+                    <h4 class="progs__title">CSS</h4>
+                    <p class="progs__level">Intermediate</p>
+                </div>
+            </section>
+            <section class="skills__section">
+                <div class="progs">
+                    <div class="progs__web">
+                        <img src="images/python.png" alt="python" class="progs__web--element">
+                    </div>
+                    <h4 class="progs__title">Python</h4>
+                    <p class="progs__level">Beginner</p>
+                </div>
+            </section>
+            <section class="skills__section">
+                <div class="progs">
+                    <div class="progs__web">
+                        <img src="images/figma.png" alt="figma" class="progs__web--element">
+                    </div>
+                    <h4 class="progs__title">Figma</h4>
+                    <p class="progs__level">Advanced</p>
+                </div>
+            </section>
         </div>
         <footer class="footer">&copy; All rights reserved to Maedot, 2023</footer>
     </body>
