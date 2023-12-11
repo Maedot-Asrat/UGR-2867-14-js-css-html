@@ -10,68 +10,80 @@
         <header>
             <nav>
                 <div class="subnav">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em" ><g  stroke-width="0" ></g> <g stroke-linecap="round" stroke-linejoin="round"></g> <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>  
-                
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="3vh" width="7vw" class="subnav-bar"><g  stroke-width="0" ></g> <g stroke-linecap="round" stroke-linejoin="round"></g> <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg> 
                     <div class="subnav-content">
-                        <a href="home.html">Home</a>
-                        <a href="about.html">About</a>
-                        <a href="resume.html">Resume</a>
-                        <a href="skills.html">Skills</a>
-                        <a href="testimonials.html">Testimonials</a>
-                        <a href="contact.html">Contact</a>
+                        <a href="home.html" class="subnav-content--link">Home</a>
+                        <a href="about.html" class="subnav-content--link">About</a>
+                        <a href="resume.html" class="subnav-content--link">Resume</a>
+                        <a href="skills.html" class="subnav-content--link">Skills</a>
+                        <a href="testimonials.html" class="subnav-content--link">Testimonials</a>
+                        <a href="contact.html" class="subnav-content--link">Contact</a>
                     </div>
                 </div>
-                <span id="inline">About</span>
+                <div class="navlist"> 
+                    <a href="home.html" class="navlist--link">Home</a> 
+                    <a href="about.html" class="navlist--link">About</a> 
+                    <a href="resume.html" class="navlist--link">Resume</a>
+                    <a href="skills.html" class="navlist--link">Skills</a>
+                    <a href="testimonials.html" class="navlist--link">Testimonials</a>
+                    <a href="contact.html" class="navlist--link">Contact</a>
+                </div> 
+                <span class="inline">About</span> 
                 <a href="mailto:asratmaedot@gmail.com">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><g  stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g > <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" fill="#080341"></path> </g></svg></a>
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="3vh" width="7vw" class="mail"><g  stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g > <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" fill="#080341"></path> </g></svg></a>
+                
             </nav>
         </header>
         <div class="main">
             <main>
-                <div class="about">
-                    <div class="aboutmad">
-                    <section>
-                    <h3>About Me</h3>
-                    <p>I have a deep passion for front-end development, specializing in HTML, CSS, JavaScript, and Node.js. Website development is an area that truly excites me, and I pour my heart into it. However, I consider myself more than just a programmer. With my humble skills in Figma and Canva, I strive to create pleasant user interfaces (UI) and enriching user experiences (UX). It brings me joy to contribute to the creation of amazing websites, always aiming to improve and learn along the way.</p>
-                    <blockquote>"Embrace the journey, for it is in the pursuit of our passions that we truly come alive."</blockquote>
-                    </section>
+                <div class="main__about">
+                    <div class="main__about__mad">
+                        <section class="main__section">
+                            <h3 class="main__section__title">About Me</h3>
+                            <p class="main__section__description">I have a deep passion for front-end development, specializing in HTML, CSS, JavaScript, and Node.js. Website development is an area that truly excites me, and I pour my heart into it. However, I consider myself more than just a programmer. With my humble skills in Figma and Canva, I strive to create pleasant user interfaces (UI) and enriching user experiences (UX). It brings me joy to contribute to the creation of amazing websites, always aiming to improve and learn along the way.</p>
+                            <blockquote class="main__section__quote">"Embrace the journey, for it is in the pursuit of our passions that we truly come alive."</blockquote>
+                        </section>
+                    </div>
+                    <div class="main__about__vid">
+                        <video controls poster="images/bits.jpg" class="main__about__vid--element">
+                            <source src="images/bits.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
-                    <div class="vid">
-                    <video controls poster="images/bits.jpg" id="bitsvid">
-                        <source src="images/bits.mp4" type="video/mp4">
-                        your browser does not support the video tag
-                    </video>
+                <div class="main__hobby">
+                    <aside class="main__hobby__aside">
+                        <h3 class="main__hobby__aside__title">Hobbies</h3>
+                        <h4 class="main__hobby__aside__subtitle">Activity</h4>
+                        <ul class="main__hobby__aside__list">
+                            <li>Making Bracelets</li>
+                            <li>Visiting Art Galleries</li>
+                            <li>Swimming</li>
+                        </ul>
+                        <div class="main__hobby__aside__img">
+                            <img src="images/art.jpg" alt="Art Galleries" class="main__hobby__aside__img--element">
+                        </div>
+                        <h4 class="main__hobby__aside__subtitle">Literary</h4>
+                        <ul class="main__hobby__aside__list">
+                            <li>Reading Books</li>
+                            <li>Creative Writing</li>
+                            <li>Web Surfing</li>
+                        </ul>
+                        <div class="main__hobby__aside__img">
+                            <img src="images/creative.jpg" alt="Creative Writing" class="main__hobby__aside__img--element">
+                        </div>
+                        <h4 class="hobby__aside-subtitle">Games and Sports</h4>
+                        <ul class=main__hobby__aside__list>
+                            <li>International Taekwondo</li>
+                        </ul>
+                        <div class="main__hobby__aside__img">
+                            <img src="images/taekwondo.jpg" alt="Art Galleries" class="main__hobby__aside__img--element">
+                        </div>
+                    </aside>
                 </div>
-            </div>
-            <div class="hobby">
-                <aside class="aside">
-                    <h3>Hobbies</h3>
-                    
-                    <h4 class="hobbies">Activity</h4>
-                    <ul>
-                        <li>Making Bracelets</li>
-                        <li>Visiting Art Galleries</li>
-                        <li>Swimming</li>
-                    </ul>
-                
-                    <img src="images/art.jpg" alt="Art Galleries" class="hobbyimg">
-                    <h4 class="hobbies">Literary</h4>
-                    <ul>
-                        <li>Reading Books</li>
-                        <li>Creative writing</li>
-                        <li>Web Surfing</li>
-                    </ul>
-                    <img src="images/creative.jpg" alt="Creative Writing" class="hobbyimg">
-                    <h4 class="hobbies">Games and Sports</h4>
-                    <ul>
-                        <li>International Taekwondo</li>
-                    </ul>
-                    <img src="images/taekwondo.jpg" alt="Art Galleries" class="hobbyimg">
-                </aside>
-            </div>
             </main>
+        </div>
     
-    </div>
         <footer class="footer">&copy; All rights reserved to Maedot, 2023</footer>
     </body>
 </html>
