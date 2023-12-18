@@ -5,6 +5,7 @@
         <meta name="viewport" content="with=device-width, initial-scale=1.0">
         <title>Contact</title>
         <link rel= "stylesheet" href="styles.css">
+        <script src="jscript.js"></script>
     </head>
     <body>
         <header>
@@ -20,6 +21,7 @@
                         <a href="contact.html" class="subnav-content--link">Contact</a>
                     </div>
                 </div>
+                
                 <div class="navlist"> 
                     <a href="home.html" class="navlist--link">Home</a> 
                     <a href="about.html" class="navlist--link">About</a> 
@@ -77,19 +79,20 @@
             </div>
             </div>
             <div class="contact__form">
-                <form action="home.html">
+                <form id="form">
                     <h3 class="contact__form__title">Contact me</h3>
                     <div class="contact__form__input">
-                        <input type="text" name="name" placeholder="Full Name" class="contact__form__input--inside">
+                        <input type="text" name="name" placeholder="Full Name" class="contact__form__input--inside" id="name">
+                        
                     </div>
                     <div class="contact__form__input">
-                        <input type="email" name="email" placeholder="Email" class="contact__form__input--inside">
+                        <input type="email" name="email" placeholder="Email" class="contact__form__input--inside" id="email">
                     </div>
                     <div class="contact__form__input">
-                        <input type="tel" name="phone" placeholder="Phone" class="contact__form__input--inside">
+                        <input type="tel" name="phone" placeholder="Phone" class="contact__form__input--inside" id="phone">
                     </div>
                     <div class="contact__form__textarea">
-                        <textarea name="message" class="message" placeholder="Enter your message here..." class="contact__form__textarea--inside"></textarea>
+                        <textarea name="message" placeholder="Enter your message here..." class="contact__form__textarea--inside" id="message"></textarea>
                     </div>
                     <div>
                         <label>What is your field of interest?</label><br>
@@ -106,13 +109,12 @@
                         <label>Advanced</label>
                     </div>
                     <div class="button">
-                    <input type="submit" value="Send" class="button--primary">
-                </div>
+                    <button type="button" onclick="redirectToEmail(event) ; revealMessage()" class="button--primary" id="send">Send</button>
+                    <p id="button__message" style="display: none">Your message is succesfully sent to Maedot. You will be contacted within 5 business days.</p>
+                    </div>
                 </form>
             </div>
         </div>
-
-
         <footer class="footer">&copy; All rights reserved to Maedot, 2023</footer>
     </body>
 </html>    

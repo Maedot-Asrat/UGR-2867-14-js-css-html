@@ -1,5 +1,5 @@
 @media screen and (min-width: 320px){
-    nav{
+	nav{
 		display: flex;
 	}
 	.navlist{
@@ -113,7 +113,6 @@
 	} 
 
 
-
 		/* Home */
 		.home{
 			display: flex;
@@ -184,7 +183,6 @@
 @media screen and (min-width: 768px){
 
 }
-
 
 body{
 	background-color: #468BA9;
@@ -274,6 +272,19 @@ body{
 
 } 
 
+@keyframes fadeIn {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	}
+  }
+  
+  #headerText span {
+	animation: fadeIn 0.3s linear forwards;
+	opacity: 0;
+  }
 
 /* About */
 .main{
@@ -331,6 +342,7 @@ body{
 .main__about__vid--element[poster]{
 	width:30vw;
 	height:50vh;
+	justify-content: center;
 }
 
 
@@ -461,6 +473,23 @@ body{
 	padding-left: 0.2em;
 	
 }
+.download__button{
+	width: 30vw;
+	height:7vh;
+	color: rgb(63, 173, 223);
+	font-size:3vh;
+	border-radius: 1em;
+	border-color: white;
+	align-items: center;
+}
+.button a{
+	text-decoration: none;
+}
+.download__button:hover{
+	background-color: #88a6b3;
+	color: #fff;
+
+} 
 
 
 /* Skills */
@@ -737,4 +766,25 @@ label{
 	color: #fff;
 
 }
-
+.phone__message{
+	display:none
+}
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+  }
+  
+  #overlayContent {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	padding: 20px;
+	text-align: center;
+  }
